@@ -110,12 +110,12 @@ section[id] { scroll-margin-top: 76px; }
   letter-spacing: -0.004em; max-width: 74ch;
 }
 
-#work { padding-bottom: clamp(48px,6.4vw,96px); }
+#work { padding-bottom: clamp(30px,3.4vw,48px); }
 .work-head { border-bottom: 1px solid var(--line); padding-bottom: 12px; }
 .work-head .label { grid-column: 1 / span 3; }
 .row {
   display: flex; align-items: baseline; gap: clamp(12px,2vw,28px);
-  padding: clamp(12px,1.4vw,18px) 0;
+  padding: clamp(11px,1.2vw,16px) 0;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   transition: padding-left .25s ease, color .2s ease;
@@ -135,7 +135,7 @@ section[id] { scroll-margin-top: 76px; }
 .tag.mix     { color: var(--mix); }
 .tag.radio   { color: var(--radio); }
 .title {
-  flex: 1 1 auto; font-size: clamp(19px,2.1vw,31px);
+  flex: 1 1 auto; font-size: clamp(18px,1.85vw,27px);
   line-height: 1.1; letter-spacing: -0.025em;
 }
 .credit {
@@ -143,10 +143,10 @@ section[id] { scroll-margin-top: 76px; }
   letter-spacing: 0.04em; color: var(--muted); text-align: right;
 }
 
-#social { padding-bottom: clamp(34px,4.6vw,64px); }
+#social { padding-bottom: 18px; row-gap: 0; }
 #social .label {
   grid-column: 1 / -1; border-bottom: 1px solid var(--line);
-  padding-bottom: 12px; margin-bottom: clamp(14px,1.6vw,20px);
+  padding-bottom: 9px; margin-bottom: 18px;
 }
 .pills { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px 12px; }
 .pill {
@@ -197,14 +197,17 @@ section[id] { scroll-margin-top: 76px; }
   .row .tagcell { order: 2; flex: 0 0 auto; }
   .title { order: 1; flex: 1 0 100%; font-size: 24px; }
   .credit { order: 3; flex: 1 1 auto; text-align: left; }
-  .nav { flex-wrap: wrap; gap: 4px 18px; }
+  .head { gap: 14px; }
+  .nav { display: contents; }
   .nav a { padding: 4px 0; }
+  .nav a:first-child { margin-right: auto; }
   .meta span:first-child { display: none; }
-  #social { row-gap: 0; padding-bottom: 34px; }
-  #social .label { padding-bottom: 10px; margin-bottom: 16px; }
+  #social { row-gap: 0; padding-bottom: 16px; }
+  #social .label { padding-bottom: 8px; margin-bottom: 16px; }
   .pill { font-size: 14px; padding: 8px 15px 9px; }
   .email { font-size: 15px; padding: 10px 19px 11px; }
   #foot { padding-top: 22px; padding-bottom: 26px; }
+  .enq { flex-direction: column; align-items: flex-start; gap: 18px; }
 }
 @media (max-width: 620px) {
   #about { grid-template-columns: 1fr; }
@@ -248,9 +251,9 @@ section[id] { scroll-margin-top: 76px; }
       <img src="portrait.jpg" width="900" height="1200" alt="Henrik Blomfelt">
     </div>
     <div class="bio">
-      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="#work">Blomfelt</a> and <a href="#work">Evigt</a>, and run my own imprint, <a href="#work">Quiet Valley</a>. My debut solo release as Blomfelt, <a href="https://oathcreations.bandcamp.com/album/im-interested-in-apathy" target="_blank" rel="noopener">&ldquo;i&rsquo;m interested in apathy&rdquo;</a>, came out via <a href="#work">Oath</a> in February 2024.</p>
-      <p>I&rsquo;m also one half of <a href="#work">Blomfelt &amp; Narby</a>, whose releases have appeared on <a href="#work">Atomnation</a> and <a href="#work">Mesh</a>, including the album <a href="https://blomfeltnarby.bandcamp.com/album/peter-barbara-beth-friends" target="_blank" rel="noopener">Peter, Barbara, Beth &amp; Friends</a>. I previously produced and hosted <a href="#work">Supportive Friends</a> on Bristol station <a href="#work">Noods</a>.</p>
-      <p>Through my studio, <a href="https://studiofelvar.com" target="_blank" rel="noopener">Studio Felvar</a>, I work in sound design, audio editing, mixing and mastering. My work on the <a href="#work">Overkill</a> podcast for Swiss magazine Der Beobachter was nominated for a series award at the Suisse Podcast Awards 2026.</p>
+      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">Blomfelt</a> and <a href="https://quietvalley.bandcamp.com/album/and-then-came-the-evening" target="_blank" rel="noopener">Evigt</a>, and run my own imprint, <a href="https://quietvalley.bandcamp.com" target="_blank" rel="noopener">Quiet Valley</a>. My debut solo release as Blomfelt, <a href="https://oathcreations.bandcamp.com/album/im-interested-in-apathy" target="_blank" rel="noopener">&ldquo;i&rsquo;m interested in apathy&rdquo;</a>, came out via <a href="https://oathcreations.bandcamp.com" target="_blank" rel="noopener">Oath</a> in February 2024.</p>
+      <p>I&rsquo;m also one half of <a href="https://blomfeltnarby.bandcamp.com" target="_blank" rel="noopener">Blomfelt &amp; Narby</a>, whose releases have appeared on <a href="https://atomnation.bandcamp.com" target="_blank" rel="noopener">Atomnation</a> and <a href="https://meshmeshmesh.bandcamp.com" target="_blank" rel="noopener">Mesh</a>, including the album <a href="https://blomfeltnarby.bandcamp.com/album/peter-barbara-beth-friends" target="_blank" rel="noopener">Peter, Barbara, Beth &amp; Friends</a>. I previously produced and hosted <a href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">Supportive Friends</a> on Bristol station <a href="https://noodsradio.com" target="_blank" rel="noopener">Noods</a>.</p>
+      <p>Through my studio, <a href="https://studiofelvar.com" target="_blank" rel="noopener">Studio Felvar</a>, I work in sound design, audio editing, mixing and mastering. My work on the <a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener">Overkill</a> podcast for Swiss magazine Der Beobachter was nominated for a series award at the Suisse Podcast Awards 2026.</p>
     </div>
   </section>
 
@@ -299,12 +302,12 @@ section[id] { scroll-margin-top: 76px; }
       <span class="title">Peter, Barbara, Beth &amp; Friends</span>
       <span class="credit">Blomfelt &amp; Narby &middot; Atomnation</span>
     </a>
-    <a class="row" href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">
+    <a class="row" href="https://soundcloud.com/blomfeltmusic/f0fab98c-bc68-47ee-a725-ad52b26aab32" target="_blank" rel="noopener">
       <span class="tagcell"><span class="tag mix">Mix</span></span>
       <span class="title">Healer</span>
       <span class="credit">Blomfelt &middot; Mix</span>
     </a>
-    <a class="row" href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">
+    <a class="row" href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">
       <span class="tagcell"><span class="tag radio">Radio</span></span>
       <span class="title">Supportive Friends</span>
       <span class="credit">Blomfelt &middot; Noods</span>
