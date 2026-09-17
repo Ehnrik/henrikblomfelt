@@ -96,13 +96,13 @@ section[id] { scroll-margin-top: 76px; }
 #about {
   border-top: 1px solid var(--line);
   padding-top: clamp(12px,1.4vw,18px);
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 }
 #about .label { grid-column: 1 / -1; margin-bottom: 0; }
-#about { row-gap: 18px; }
+#about { row-gap: 20px; }
 .portrait {
-  grid-column: 1 / span 3; align-self: start;
-  aspect-ratio: 3 / 4; overflow: hidden; border-radius: 10px;
+  grid-column: 1 / span 3; align-self: stretch; min-height: 230px;
+  overflow: hidden; border-radius: 10px;
   background: rgba(237,235,230,0.06);
 }
 .portrait img { width: 100%; height: 100%; object-fit: cover; }
@@ -192,7 +192,7 @@ section[id] { scroll-margin-top: 76px; }
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr; }
   .grid > * { grid-column: 1 / -1 !important; text-align: left !important; }
-  #about { grid-template-columns: minmax(180px,30%) 1fr; column-gap: 26px; padding-bottom: 34px; }
+  #about { grid-template-columns: minmax(180px,30%) 1fr; column-gap: 26px; padding-bottom: 20px; }
   #about .label { grid-column: 1 / -1 !important; }
   .portrait { grid-column: 1 !important; }
   .bio { grid-column: 2 !important; }
@@ -215,7 +215,7 @@ section[id] { scroll-margin-top: 76px; }
 }
 @media (max-width: 620px) {
   #about { grid-template-columns: 1fr; }
-  .portrait { grid-column: 1 / -1 !important; aspect-ratio: 4/5; align-self: auto; max-width: 300px; }
+  .portrait { grid-column: 1 / -1 !important; aspect-ratio: 4/5; align-self: auto; max-width: 300px; min-height: 0; }
   .bio { grid-column: 1 / -1 !important; }
 }
 @media (max-width: 480px) {
@@ -255,9 +255,9 @@ section[id] { scroll-margin-top: 76px; }
       <img src="portrait.jpg" width="900" height="1200" alt="Henrik Blomfelt">
     </div>
     <div class="bio">
-      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">Blomfelt</a> and <a href="https://quietvalley.bandcamp.com/album/and-then-came-the-evening" target="_blank" rel="noopener">Evigt</a>, and run my own imprint, <a href="https://quietvalley.bandcamp.com" target="_blank" rel="noopener">Quiet Valley</a>. My debut solo release as Blomfelt, &ldquo;i&rsquo;m interested in apathy&rdquo;, came out via Oath in February 2024.</p>
-      <p>I&rsquo;m also one half of <a href="https://blomfeltnarby.bandcamp.com" target="_blank" rel="noopener">Blomfelt &amp; Narby</a>, whose releases have appeared on Atomnation and Mesh, including the album Peter, Barbara, Beth &amp; Friends. I previously produced and hosted <a href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">Supportive Friends</a> on Bristol station Noods.</p>
-      <p>Through my studio, <a href="https://studiofelvar.com" target="_blank" rel="noopener">Studio Felvar</a>, I work in sound design, audio editing, mixing and mastering. My work on the <a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener">Overkill</a> podcast for Swiss magazine Der Beobachter was nominated for a series award at the Suisse Podcast Awards 2026.</p>
+      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">Blomfelt</a> and <a href="https://quietvalley.bandcamp.com/album/and-then-came-the-evening" target="_blank" rel="noopener">Evigt</a>, and run my own imprint, <a href="https://quietvalley.bandcamp.com" target="_blank" rel="noopener">Quiet Valley</a>.</p>
+      <p>I&rsquo;m also one half of <a href="https://blomfeltnarby.bandcamp.com" target="_blank" rel="noopener">Blomfelt &amp; Narby</a>, with releases on Atomnation and Mesh. I previously produced and hosted <a href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">Supportive Friends</a> on Bristol station Noods.</p>
+      <p>Through my studio, <a href="https://studiofelvar.com" target="_blank" rel="noopener">Studio Felvar</a>, I work in sound design, editing, mixing and mastering.</p>
     </div>
   </section>
 
