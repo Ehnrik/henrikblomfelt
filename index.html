@@ -25,9 +25,9 @@
   --ink: #EDEBE6;
   --muted: #8C8A83;
   --line: rgba(237,235,230,0.16);
-  --release: oklch(0.88 0.03 90);
+  --release: oklch(0.80 0.10 152);
   --studio: oklch(0.80 0.10 62);
-  --label: oklch(0.80 0.10 152);
+  --label: oklch(0.88 0.03 90);
   --mix: oklch(0.80 0.10 232);
   --radio: oklch(0.80 0.10 22);
 }
@@ -105,10 +105,12 @@ section[id] { scroll-margin-top: 76px; }
   background: rgba(237,235,230,0.06);
 }
 .portrait img { width: 100%; height: 100%; object-fit: cover; }
+.bio a { text-decoration: none; border-bottom: 1px solid var(--line); }
+.bio a:hover { border-bottom-color: currentColor; }
 .bio {
   grid-column: 4 / -1; display: flex; flex-direction: column; gap: 0.95em;
-  font-size: clamp(15px,1.15vw,17.5px); line-height: 1.6;
-  letter-spacing: -0.004em; max-width: 74ch;
+  font-size: clamp(15.5px,1.2vw,18px); line-height: 1.65;
+  letter-spacing: -0.004em; max-width: 62ch;
 }
 
 #work { padding-bottom: clamp(30px,3.4vw,48px); }
@@ -252,8 +254,8 @@ section[id] { scroll-margin-top: 76px; }
       <img src="portrait.jpg" width="900" height="1200" alt="Henrik Blomfelt">
     </div>
     <div class="bio">
-      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">Blomfelt</a> and <a href="https://quietvalley.bandcamp.com/album/and-then-came-the-evening" target="_blank" rel="noopener">Evigt</a>, and run my own imprint, <a href="https://quietvalley.bandcamp.com" target="_blank" rel="noopener">Quiet Valley</a>. My debut solo release as Blomfelt, <a href="https://oathcreations.bandcamp.com/album/im-interested-in-apathy" target="_blank" rel="noopener">&ldquo;i&rsquo;m interested in apathy&rdquo;</a>, came out via <a href="https://oathcreations.bandcamp.com" target="_blank" rel="noopener">Oath</a> in February 2024.</p>
-      <p>I&rsquo;m also one half of <a href="https://blomfeltnarby.bandcamp.com" target="_blank" rel="noopener">Blomfelt &amp; Narby</a>, whose releases have appeared on <a href="https://atomnation.bandcamp.com" target="_blank" rel="noopener">Atomnation</a> and <a href="https://meshmeshmesh.bandcamp.com" target="_blank" rel="noopener">Mesh</a>, including the album <a href="https://blomfeltnarby.bandcamp.com/album/peter-barbara-beth-friends" target="_blank" rel="noopener">Peter, Barbara, Beth &amp; Friends</a>. I previously produced and hosted <a href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">Supportive Friends</a> on Bristol station <a href="https://noodsradio.com" target="_blank" rel="noopener">Noods</a>.</p>
+      <p>I&rsquo;m a Z&uuml;rich-based musician and producer. I release solo work as <a href="https://soundcloud.com/blomfeltmusic" target="_blank" rel="noopener">Blomfelt</a> and <a href="https://quietvalley.bandcamp.com/album/and-then-came-the-evening" target="_blank" rel="noopener">Evigt</a>, and run my own imprint, <a href="https://quietvalley.bandcamp.com" target="_blank" rel="noopener">Quiet Valley</a>. My debut solo release as Blomfelt, &ldquo;i&rsquo;m interested in apathy&rdquo;, came out via Oath in February 2024.</p>
+      <p>I&rsquo;m also one half of <a href="https://blomfeltnarby.bandcamp.com" target="_blank" rel="noopener">Blomfelt &amp; Narby</a>, whose releases have appeared on Atomnation and Mesh, including the album Peter, Barbara, Beth &amp; Friends. I previously produced and hosted <a href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">Supportive Friends</a> on Bristol station Noods.</p>
       <p>Through my studio, <a href="https://studiofelvar.com" target="_blank" rel="noopener">Studio Felvar</a>, I work in sound design, audio editing, mixing and mastering. My work on the <a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener">Overkill</a> podcast for Swiss magazine Der Beobachter was nominated for a series award at the Suisse Podcast Awards 2026.</p>
     </div>
   </section>
@@ -306,7 +308,7 @@ section[id] { scroll-margin-top: 76px; }
     <a class="row" href="https://soundcloud.com/blomfeltmusic/f0fab98c-bc68-47ee-a725-ad52b26aab32" target="_blank" rel="noopener">
       <span class="tagcell"><span class="tag mix">Mix</span></span>
       <span class="title">Healer</span>
-      <span class="credit">Blomfelt &middot; Mix</span>
+      <span class="credit">Blomfelt</span>
     </a>
     <a class="row" href="https://soundcloud.com/blomfeltmusic/sets/supportive-friends-w-blomfelt" target="_blank" rel="noopener">
       <span class="tagcell"><span class="tag radio">Radio</span></span>
