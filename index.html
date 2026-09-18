@@ -18,7 +18,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --accent: #A79BF5;
@@ -38,7 +38,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: 'Instrument Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Archivo', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
@@ -65,7 +65,7 @@ section[id] { scroll-margin-top: 76px; }
 }
 .nav { display: flex; align-items: baseline; gap: clamp(14px,2.5vw,36px); }
 .mono, .nav a, .meta {
-  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  font-size: 12px; font-weight: 500;
   letter-spacing: 0.06em; text-transform: uppercase;
 }
 .nav a:first-child { color: var(--ink); }
@@ -76,8 +76,8 @@ section[id] { scroll-margin-top: 76px; }
 
 .grid { display: grid; grid-template-columns: repeat(12,1fr); gap: clamp(16px,2vw,28px); }
 .label {
-  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-  letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+  font-size: 12px; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 
 #top { padding: clamp(24px,3vw,40px) 0; animation: fade .7s ease both; }
@@ -128,8 +128,8 @@ section[id] { scroll-margin-top: 76px; }
 .row .tagcell { flex: 0 0 clamp(96px,10vw,140px); }
 .tag {
   display: inline-block;
-  font-family: 'IBM Plex Mono', monospace; font-size: 11px;
-  letter-spacing: 0.08em; text-transform: uppercase;
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
   border: 1px solid currentColor; border-radius: 999px;
   padding: 4px 10px 5px; white-space: nowrap;
 }
@@ -143,8 +143,8 @@ section[id] { scroll-margin-top: 76px; }
   line-height: 1.1; letter-spacing: -0.025em;
 }
 .credit {
-  flex: 0 0 auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-  letter-spacing: 0.04em; color: var(--muted); text-align: right;
+  flex: 0 0 auto; font-size: 13px;
+  letter-spacing: 0.01em; color: var(--muted); text-align: right;
 }
 
 #social { padding-bottom: 18px; row-gap: 0; }
@@ -182,8 +182,8 @@ section[id] { scroll-margin-top: 76px; }
 }
 .email:hover { background: var(--accent); border-color: var(--accent); color: #16160f; }
 .copy {
-  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
-  letter-spacing: 0.05em; color: var(--muted); line-height: 1;
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted); line-height: 1;
 }
 
 @media (max-width: 980px) {
